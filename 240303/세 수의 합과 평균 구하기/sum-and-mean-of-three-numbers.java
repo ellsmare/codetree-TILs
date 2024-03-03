@@ -6,7 +6,9 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        System.out.println(a+b+c);
-        System.out.printf("%.0f",((double)a+b+c)/3);
+        double sum = a+b+c;
+
+        System.out.printf("%.0f\n",sum);
+        System.out.printf("%.0f",sum/3);
     }
 }
