@@ -9,6 +9,7 @@ public class Main {
         if(a>b){
             System.out.print(a-b);
         }
+        if(a<=b)
         System.out.print(b-a);
     }
 }
