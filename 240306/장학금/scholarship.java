@@ -7,7 +7,7 @@ public class Main {
         int lastScore = sc.nextInt();
         if(middleScore>=90 && lastScore >=95){
             System.out.println(100000);
-        }else if(middleScore>=90 && lastScore >=95){
+        }else if(middleScore>=90 && lastScore >=90){
             System.out.println(50000);
         }else{
             System.out.println(0);
