@@ -16,7 +16,7 @@ public class Main {
              if(age>=19){
                 System.out.println("WOMAN");
             }else{
-                System.out.println("BOY");
+                System.out.println("GIRL");
             }
         }
     }
