@@ -12,35 +12,23 @@ public class Main {
         char c_check = sc.next().charAt(0);
         int c_temp = sc.nextInt();
 
-        String state;
-        int count=0;
         
         if(a_check == 'Y' && a_temp>=37){
-            state="A";
-            count = count+1;
-        }
-        if(b_check == 'Y' && b_temp>=37){
-            state="A";
-            count = count+1;
-        }
-        if(c_check == 'Y' && c_temp>=37){
-            state="A";
-            count = count+1;
+            if((b_check== 'Y' && b_temp>=37)|| (c_check== 'Y' && c_temp>=37)){
+                System.out.println("E");
+            }else{
+                 System.out.println("N");
+            }
+           
+        }else{
+            if((b_check== 'Y' && b_temp>=37) && (c_check== 'Y' && c_temp>=37)){
+                System.out.println("E");
+            }else{
+                 System.out.println("N");
+            }
+
         }
         
-        if((a_check == 'N' && a_temp>=37)||(b_check == 'N' && b_temp>=37)||(c_check == 'N' && c_temp>=37)){
-            state ="B";
-        }else if((a_check == 'Y' && a_temp<37)||(b_check == 'Y' && b_temp<37)||(c_check == 'Y' && c_temp<37)){
-            state ="C";
-        }else if((a_check == 'N' && a_temp<37)||(b_check == 'N' && b_temp<37)||(c_check == 'N' && c_temp<37)){
-             state ="D";
-        }
-
-        if(count>=2){
-            System.out.println("E");
-        }else{
-            System.out.println(count);
-            System.out.println("N");
-        }
+     
     }
 }
