@@ -15,8 +15,9 @@ public class Main {
                 if(i!=0 && j%2==0){
                     System.out.print(" *");
                 }
-            }
             System.out.println();
+            }
+            
         }
 
     }
