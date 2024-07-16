@@ -8,22 +8,27 @@ public class Main {
         int n = sc.nextInt();
         int cnt=0;
 
-        for (int i = 0; i < n-cnt; i++) {
+        for (int i = 0; i < n; i++) {
             if (i==0){
                 for (int j = 0; j < n; j++) {
                     System.out.print("* ");
                 }
-            System.out.println();
-            cnt++;
+            System.out.println();  
             }
-
             else{
                 for (int j = 0; j < n; j++) {
-                    if(i!=0 && j%2!=0){
-                        System.out.print("  *");
+                    
+                    if(j%2==0 || j <i){
+                        
+                        System.out.print( "  ");
+                        
                     }   
+                    else{
+                        System.out.print( "* ");
+                    }
                 }  
                 System.out.println();
+                
 
             }
         }
