@@ -6,19 +6,26 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int cnt=0;
 
-        for (int i = 0; i < n; i++) {
-             for (int j = 0; j < n; j++) {
-                if (i==0){
+        for (int i = 0; i < n-cnt; i++) {
+            if (i==0){
+                for (int j = 0; j < n; j++) {
                     System.out.print("* ");
                 }
-                if(i!=0 && j%2==0){
-                    System.out.print(" *");
-                }
             System.out.println();
+            cnt++;
             }
-            
-        }
 
+            else{
+                for (int j = 0; j < n; j++) {
+                    if(i!=0 && j%2!=0){
+                        System.out.print("  *");
+                    }   
+                }  
+                System.out.println();
+
+            }
+        }
     }
 }
