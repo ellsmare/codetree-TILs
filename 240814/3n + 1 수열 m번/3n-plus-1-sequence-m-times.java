@@ -6,31 +6,25 @@ public class Main {
         
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
-        int sum=0;
-        
+                
         for(int i=0;i<m; i++){ //m=3
             int n = sc.nextInt(); 
-            int result=n;
             int cnt=0;
             //System.out.println(n); //1 26 3 
 
-            while(result!=1){
-                if(result%2==0){
+            while(n!=1){
+                if(n%2==0){
                     //짝수 %2
-                    n=n%2;
-                    result=n;
+                    n=(n/2);
                     cnt+=1;
-                    System.out.println("짝수"+sum);  
                 }
                 else{
                     //홀수 *3
                     n=(n*3)+1;
                     cnt+=1;
-                    System.out.println("홀수"+sum);  
                 }
-                sum=cnt;
             }
-            System.out.println(sum);  
+            System.out.println(cnt);  
         }
     }
 }
